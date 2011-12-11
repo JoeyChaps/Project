@@ -9,6 +9,11 @@ To build:
 
 	*	scons build
 
+	The build option appears to be just that -- optional. That is, running
+	the scons command without any options appears to do the same thing as 
+	running it with the build option. The executables will be built in either
+	case.
+
 To install:
 
 	*	scons install --prefix=<base directory>
