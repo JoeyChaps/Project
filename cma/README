@@ -1,0 +1,36 @@
+This package builds, installs, cleans, and removes the Memory Allocation 
+project using Automake. 
+
+The following source files and documents from the repository are required:
+
+	*	cma.c cma.h ma.c joe.c debug.h README configure.ac Makefile.am
+
+To set up Automake for builds and installs, run the followin commands in order:
+
+	*	autoscan
+	* 	libtoolize
+	*	autoconf
+	*	aclocal
+	*	automake --add-missing
+	* 	autoconf
+	* 	./configure		(see following note on optional prefix argument)
+
+To specify the base directory from which to install the directory subtree,
+run the config command with the following arguments:
+
+	*	./configure --prefix=<base directory>
+
+where <base directory> is a hard path to the location. Running configure 
+without arguments installs the directory subtree at the default location, 
+root's usr directory, and requires root user permissions.
+
+Once the previous steps are completed, you may use the following commands:
+
+	*	make			(with no arguments, builds the project)
+	*	make install	(installs source files in the directory subtree)
+	*	make clean		(removes local executables)
+	* 	make uninstall	(uninstalls files from the directory subtree)
+
+
+
+
