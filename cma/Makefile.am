@@ -12,3 +12,6 @@ include_HEADERS = cma.h debug.h
 
 lib_LTLIBRARIES = libcma.la
 libcma_la_SOURCES = cma.c
+
+docdir = $(datadir)/doc/@PACKAGE@
+doc_DATA = README

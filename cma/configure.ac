@@ -4,7 +4,7 @@
 AC_PREREQ([2.65])
 AC_INIT([cma], [1.1], [jchapmantx@hotmail.com])
 AM_INIT_AUTOMAKE
-AC_OUTPUT([Makefile] [src/Makefile] [doc/Makefile])
+AC_OUTPUT([Makefile])
 AC_CONFIG_SRCDIR([cma.c])
 
 # Checks for programs.
